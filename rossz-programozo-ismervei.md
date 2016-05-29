@@ -1,5 +1,5 @@
-A rossz programozó ismérvei:
-============================
+A rossz programozó ismérvei
+===========================
 
 Sokan aggódnak - köztük régebben én is -, hogy vajon jó programozónak számítanak-e. Az az igazság, hogy mindig lesz olyan definíció, amely szerint nem vagyunk elég jók, ezért nem is érdemes feltenni magunknak a kérdést. Ennél sokkal fontosabb, hogy ne legyünk *rossz programozók*, akik a kollégáiknak folyamatosan plusz munkát, munkaadójuknak pedig veszteséget termelnek. Íme egy rövid lista a rossz programozók főbb tulajdonságairól - remélem, sok olvasómat megnyugtatja majd.
 
