@@ -33,11 +33,13 @@ A fentiek szerint tehát adott hasítóértékhez lehetetlenül nehéz megtalál
 Egyszerű jelszótárolás hasítófüggvénnyel
 ----------------------------------------
 
-Ezt a tulajdonságot kihasználva kezdték a hasítófüggvényeket **jelszóellenőrzésre** használni. Az ötlet az, hogy a regisztráció során a jelszónak csak a hasítóértékét tároljuk az adatbázisban, magát a jelszót a rendszer eldobja. Belépésnél szintén kiszámítjuk a megadott jelszó hasítóértékét, amelyet összehasonlítunk az adatbázisban tárolt értékkel. Ha a két érték egyezik, a megadott jelszó helyes.
+Ezt a tulajdonságot kihasználva kezdték a hasítófüggvényeket **jelszóellenőrzésre** használni. Az ötlet az, hogy a regisztráció során a jelszónak csak a hasítóértékét tároljuk az adatbázisban, magát a jelszót a rendszer eldobja.
 
 ![Jelszótárolás egyszerű hasítófüggvénnyel - regisztráció](jelszavak-3-egyszeru-regisztracio.png)
 
 *3. ábra: Jelszótárolás egyszerű hasítófüggvénnyel - regisztráció*
+
+Belépésnél szintén kiszámítjuk a megadott jelszó hasítóértékét, amelyet összehasonlítunk az adatbázisban tárolt értékkel. Ha a két érték egyezik, a megadott jelszó helyes.
 
 ![Jelszótárolás egyszerű hasítófüggvénnyel - sikeres belépés](jelszavak-4-egyszeru-sikeres-belepes.png)
 
@@ -59,7 +61,10 @@ Védekezés a szivárványtáblás támadás ellen
 
 A szivárványtáblás támadások ellen a bemenet ún. **sózásával** (*salting*) védekezhetünk. A jelszóhoz egy felhasználónként egyedi, hosszú, véletlenszerű értéket - **sót** (*salt*) - fűzünk, és az így kapott hosszabb szöveg hasítóértékét és a sót tároljuk az adatbázisban. Így olyan hosszú és bonyolult bemenetet állítottunk elő, amelynek feltöréséhez lehetetlenül nagy szivárványtáblára lenne szükség.
 
-(ábra: Jelszótárolás sózással - regisztráció)
+![Jelszótárolás sózással - regisztráció](jelszavak-6-sozott-regisztracio.png)
+
+*6. ábra: Jelszótárolás sózással - regisztráció*
+
 (ábra: Jelszótárolás sózással - sikeres belépés)
 (ábra: Jelszótárolás sózással - sikertelen belépés)
 
